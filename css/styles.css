@@ -162,7 +162,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	background-color: #f7f7f7;
-	padding: 5em 0;
+	padding-top: 3em;
 	align-items: center;
 	justify-content: center;
 	height: 60vh;
@@ -206,6 +206,7 @@ html {
 	position: relative;
 	color: white;
 	padding: 1em;
+	margin-left: 1em;
 }
 
 .main__article--1 {
