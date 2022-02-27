@@ -62,7 +62,7 @@ html {
 	font-size: 0.8em;
 	padding-left: 2.5em;
 	letter-spacing: 0.6px;
-	/* display: inline-block; */
+	display: inline-block;
 	transform: translateY(0px);
 	transition: transform 200ms ease;
 }
@@ -267,31 +267,33 @@ html {
 }
 
 .main__recentContainer {
+	display: flex;
+	justify-content: center;
 }
 .main__recentArticle {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	width: 18vw;
+	width: 30vw;
 	height: 22vh;
 	border-radius: 3px;
 	position: relative;
-	color: white;
-	border: 1px solid red;
+	background-color: white;
+	border: 1px solid #e5e5e5;
 }
 
 .main__recent-photo {
 	background-image: url(../Images/5e4b1929fccc7f8ce9de833d_photo-1433854304641-67729357fe18.jpg);
-	background-position: 50% 50%;
+	background-position: 50% 60%;
 	background-size: cover;
 	height: 100%;
-	display: block;
+	width: 100%;
 }
 
 .main__recent-theme {
 	position: absolute;
-	top: 8%;
-	left: 3%;
+	top: 3%;
+	left: 2%;
 	border-radius: 2px;
 	font-family: "Oxygen", sans-serif;
 	font-weight: 400;
@@ -300,17 +302,34 @@ html {
 	font-size: 0.6rem;
 	padding: 0.4em 0.6em;
 	line-height: 13px;
+	color: white;
 }
+.main__article-theme--nature {
+	background-color: #e6c728;
+}
+
 .main__recent-title {
 	font-family: "Lora", sans-serif;
 	font-weight: 400;
 	color: #101315;
 	font-size: 1rem;
+	padding: 0 1rem;
+	margin-top: 0.8rem;
 }
 .main__recent-desc {
 	font-family: Oxygen, sans-serif;
 	color: #7a7a7a;
 	font-size: 0.7rem;
+	padding: 0 1rem;
+	margin-top: 0.4rem;
 }
-.main__article-footer {
+.main__article-footer--recent {
+	color: #7a7a7a;
+	padding: 0em 1em 0.8em 1em;
+	margin: 0;
+}
+
+.main__recent-separateur {
+	border-top: 1px solid #efefef;
+	margin: 2em 0 0.6em 0;
 }
