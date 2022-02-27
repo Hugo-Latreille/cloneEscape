@@ -31,7 +31,6 @@ html {
 	justify-content: center;
 	align-items: center;
 	padding-top: 1.2em;
-	/* padding-left: 20.2%; */
 }
 
 .header__logo {
@@ -78,9 +77,6 @@ html {
 }
 
 .header__description-container {
-	/* position: absolute;
-	top: 35%;
-	left: 33.4%; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -123,7 +119,7 @@ html {
 	font-family: "Lora", serif;
 	font-weight: 400;
 	font-size: 0.85rem;
-	height: 4vh;
+	height: 4.5vh;
 	position: relative;
 	padding: 1em;
 	border-bottom: 1px solid #e0e0e0;
@@ -147,7 +143,6 @@ html {
 }
 
 .header__submenu-item {
-	margin: 0 1em;
 	padding: 0.65em 3.5em;
 	color: #768088;
 	background-color: white;
@@ -161,22 +156,11 @@ html {
 }
 
 .main {
-	display: flex;
-	flex-direction: column;
 	background-color: #f7f7f7;
-	padding-top: 3em;
-	align-items: center;
-	justify-content: center;
-	height: 60vh;
-}
-
-.main__topSection {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;
 }
 
 .main__title {
@@ -189,12 +173,11 @@ html {
 	border-bottom: 1px solid #cccccc;
 	padding: 0.5em 0.5em;
 	margin-bottom: 1em;
+	margin-top: 2em;
 }
 
 .main__articlesContainer {
 	display: flex;
-	width: 100%;
-	height: 100%;
 	justify-content: center;
 	gap: 1em;
 }
@@ -203,8 +186,8 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	width: 25%;
-	height: 40%;
+	width: 33vw;
+	height: 21vh;
 	border-radius: 3px;
 	position: relative;
 	color: white;
@@ -217,6 +200,12 @@ html {
 	background-size: cover;
 }
 
+.main__article--2 {
+	background-image: url(../Images/5e4b1929fccc7f0439de8336_photo-1443304895043-ef30921332c5.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
 .main__article-theme {
 	position: absolute;
 	top: 8%;
@@ -225,12 +214,16 @@ html {
 	font-family: "Oxygen", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
+	letter-spacing: 0.05rem;
 	font-size: 0.6rem;
 	padding: 0.4em 0.6em;
 	line-height: 13px;
 }
 .main__article-theme--photo {
 	background-color: #a872b7;
+}
+.main__article-theme--adventure {
+	background-color: var(--orange);
 }
 
 .main__article-title {
@@ -271,4 +264,53 @@ html {
 	font-family: "Oxygen", sans-serif;
 	font-weight: 400;
 	font-size: 0.65rem;
+}
+
+.main__recentContainer {
+}
+.main__recentArticle {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 18vw;
+	height: 22vh;
+	border-radius: 3px;
+	position: relative;
+	color: white;
+	border: 1px solid red;
+}
+
+.main__recent-photo {
+	background-image: url(../Images/5e4b1929fccc7f8ce9de833d_photo-1433854304641-67729357fe18.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 100%;
+	display: block;
+}
+
+.main__recent-theme {
+	position: absolute;
+	top: 8%;
+	left: 3%;
+	border-radius: 2px;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	font-size: 0.6rem;
+	padding: 0.4em 0.6em;
+	line-height: 13px;
+}
+.main__recent-title {
+	font-family: "Lora", sans-serif;
+	font-weight: 400;
+	color: #101315;
+	font-size: 1rem;
+}
+.main__recent-desc {
+	font-family: Oxygen, sans-serif;
+	color: #7a7a7a;
+	font-size: 0.7rem;
+}
+.main__article-footer {
 }
